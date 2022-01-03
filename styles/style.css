@@ -1,0 +1,29 @@
+.first-page{
+    margin: 5px;
+    margin-top: 100px;
+    display: none;
+}
+
+.first-page h3{
+    color: black; 
+    margin-bottom: 40px; 
+}
+
+.inputs{
+    margin: 0 auto;
+    display: flex;
+}
+
+.inputs :first-child {
+    margin-right: 5px;  
+}
+
+.second-page{
+    margin: 5px;
+    margin-top: 100px;
+    display: none;
+}
+
+.form-shoved{
+    display: block;
+}
