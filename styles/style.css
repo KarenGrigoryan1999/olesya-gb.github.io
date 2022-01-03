@@ -18,7 +18,13 @@
     margin-right: 5px;  
 }
 
-.second-page{
+.second-page {
+    margin: 5px;
+    margin-top: 100px;
+    display: none;
+}
+
+.three-page {
     margin: 5px;
     margin-top: 100px;
     display: none;
