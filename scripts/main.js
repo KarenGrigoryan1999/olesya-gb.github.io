@@ -13,3 +13,10 @@ function toQRClick(){
     secondPage.classList.toggle("form-shoved");
     localStorage.setItem('stage', 2);
 }
+
+const getStage = localStorage.getItem('stage');
+
+if(getStage == 2) {
+    nextClick();
+    toQRClick();
+}
