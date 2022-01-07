@@ -3,7 +3,6 @@ function nextClick(){
     const firstPage = document.getElementById("first-page");
     firstPage.classList.toggle("form-shoved");
     secondPage.classList.toggle("form-shoved");
-    localStorage.setItem('stage', 1);
 }
 
 function toQRClick(){
@@ -14,9 +13,12 @@ function toQRClick(){
     localStorage.setItem('stage', 2);
 }
 
-const getStage = localStorage.getItem('stage');
+function startGame(){
+    localStorage.setItem('qr', 0);
+}
 
-if(getStage == 2) {
-    nextClick();
-    toQRClick();
+const getStage = localStorage.getItem('qr');
+
+if(!getStage) {
+    window.location.replace('https://karengrigoryan1999.github.io/olesya-gb.github.io/scan.html');
 }

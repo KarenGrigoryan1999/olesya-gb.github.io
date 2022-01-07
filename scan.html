@@ -1,11 +1,15 @@
 <html>
 <head>
     <title>Html-Qrcode Demo</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <body>
-    <div id="qr-reader" style="width:500px"></div>
+    <h1 id = "qr-cods">Вы нашли: 0 кодов</h1>
+    <div id="qr-reader" style="width:100%"></div>
     <div id="qr-reader-results"></div>
 </body>
 <script>
+    document.getElementById("qr-cods").innerText = `Вы нашли: ${localStorage.getItem('qr')} кодов`;
     function docReady(fn) {
         // see if DOM is already available
         if (document.readyState === "complete"
