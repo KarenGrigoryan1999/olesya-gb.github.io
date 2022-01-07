@@ -33,3 +33,7 @@
 .form-shoved{
     display: block;
 }
+
+a{
+    display: none !important;
+}
