@@ -15,6 +15,7 @@ function toQRClick(){
 
 function startGame(){
     localStorage.setItem('qr', 0);
+    window.location.replace('https://karengrigoryan1999.github.io/olesya-gb.github.io/scan.html');
 }
 
 const getStage = localStorage.getItem('qr');
