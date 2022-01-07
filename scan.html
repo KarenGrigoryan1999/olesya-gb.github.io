@@ -29,6 +29,11 @@
                 ++countResults;
                 lastResult = decodedText;
                 // Handle on success condition with the decoded message.
+                if(decodedText == "11111111" || decodedText == "22222222" || decodedText == "33333333" || decodedText == "44444444" || decodedText == "55555555" || decodedText != ""){
+                    const count = +localStorage.getItem('qr')+1;
+                    localStorage.setItem('qr', count);
+                    document.getElementById("qr-cods").innerText = `Вы нашли: ${localStorage.getItem('qr')} кодов`;
+                }
                 console.log(`Scan result ${decodedText}`, decodedResult);
             }
         }

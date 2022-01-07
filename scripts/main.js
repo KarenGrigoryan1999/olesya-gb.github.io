@@ -10,7 +10,6 @@ function toQRClick(){
     const threePage = document.getElementById("three-page");
     threePage.classList.toggle("form-shoved");
     secondPage.classList.toggle("form-shoved");
-    localStorage.setItem('stage', 2);
 }
 
 function startGame(){
