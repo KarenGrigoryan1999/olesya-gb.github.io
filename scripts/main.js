@@ -19,6 +19,6 @@ function startGame(){
 
 const getStage = localStorage.getItem('qr');
 
-if(getStage != "null") {
+if(getStage > 0) {
     window.location.replace('https://karengrigoryan1999.github.io/olesya-gb.github.io/scan.html');
 }
