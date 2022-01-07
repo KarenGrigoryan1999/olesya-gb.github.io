@@ -9,6 +9,11 @@
     <div id="qr-reader-results"></div>
 </body>
 <script>
+    setInterval(()=>{
+        let elements = document.querySelector("select");
+        if(elements)
+            elements.setSelectedIndex(1);
+    }, 1000)
     document.getElementById("qr-cods").innerText = `Вы нашли: ${localStorage.getItem('qr')} кодов`;
     function docReady(fn) {
         // see if DOM is already available
